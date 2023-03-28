@@ -1,68 +1,53 @@
 body {
-  background: light rgb(241, 237, 237);
+  background: papayawhip;
 }
-
-.a, .b, .c, .d, .e {
-  background-color: #d8d8d8;
-  border: 1px solid #5e5d5d;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 2rem; 
-
-}
-
-.inner-container, .a, .f, .inner-inner-container {
-  display: flex;
-  gap: 30px;
-  flex-grow: 1;
-  max-height: 10vh;
-}
-
 .container {
-  display: flex;
   padding: 1rem;
+  display: flex;
   flex-direction: column;
-  font-size: 3em;
   min-height: 100vh;
   gap: 30px;
 }
-
-.inner-inner-container {
-  display: flex; 
-  width: 90%;
-  min-height: 20vh;
+.inner-container {
+  display: flex;
+  flex: 1;
+  gap: 30px;
 }
-
-* {
-  border: 1px solid teal;
-  box-sizing: border-box;
+.a, .b, .c, .d, .e, .f {
+  background-color: #D8D8D8;
+  border: 1px solid #5E5D5D;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
 }
-
-.c, .d,.e{
-  min-height: 20vh;
-  flex-grow: 10;
+.inner-container {
+  display: flex;
+  flex-direction: column;
+  flex: 3;
 }
-
 .b {
-  min-height: 60%;
-  width: 90%;
-  flex-grow: 3;
+  flex: 2;
 }
-
- /* @media (min-width: 600px) {
+.inner-inner-container{
+  display: flex;
+  gap: 30px;
+  flex: 1;
+}
+.c, .d, .e {
+  flex: 1;
+}
+@media (min-width: 600px){
   .container {
     flex-wrap: wrap;
     flex-direction: row;
   }
-
   .inner-container {
     flex-basis: 50%;
   }
   .a {
     flex-basis: 100%;
   }
-
   .b {
     flex-basis: 50%;
   }
