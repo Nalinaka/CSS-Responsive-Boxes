@@ -28,6 +28,7 @@ body {
 }
 .b {
   flex: 2;
+  width: 100%;
 }
 .inner-inner-container{
   display: flex;
@@ -35,7 +36,13 @@ body {
   flex: 1;
 }
 .c, .d, .e {
-  flex: 1;
+  flex: 5;
+  width: 25%;
+  height:100;
+}
+
+.f {
+  width: 30%;
 }
 @media (min-width: 600px){
   .container {
